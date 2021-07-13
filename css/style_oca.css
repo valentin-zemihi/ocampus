@@ -1,0 +1,117 @@
+/*
+* Color
+* blue : #2471a3 ;
+* yellow : #f1c40f;
+*/
+
+/***Special adapted Boootstrap***/
+	.btn-primary {
+		background-color : #4682b4 ;
+		border-color : #4682b4 ;
+	}
+	.btn-primary:hover {background-color: #308ecd ;}
+
+/***Home page***/
+
+	/*---Menu---*/
+		.title {color : white ;}
+	
+		#headerMenu {background-color : #2471a3aa ;}
+	
+		#zoneIcone {color : white ;}
+		.zoneIcone:hover {background-color: #308ecd ;}
+
+		#collapseMenu {background-color : #308ecd ;}
+
+	/*---Présentation---*/
+		h1 {
+			font : bold 2em "Verdana";
+			color : white ;
+		
+			background-color : #2471A3 ;
+			border : 5px solid white ;
+		}
+
+	/*---Présentation Assos---*/
+		#zoneAsso {margin-bottom: 10px ;}
+
+		#zoneListAsso {
+			max-height: 450px ;
+			overflow: auto ;
+		}
+
+		.btnAsso {
+			max-height: 100px ;
+			margin-top : 5px ;
+
+			text-decoration: none ;
+
+			color: white ;}
+		.btnAsso:hover {
+			background-color : #00000022 ;
+
+			text-decoration : underline ;
+			color : white ;
+		}
+		.btnAsso.active{
+			background-color : #00000022 ;
+		}
+
+		.btnLogoAsso {
+			max-height: 100px ;
+		}
+
+		#list-asso1{background-color : #000 ;}
+		#list-asso1:hover{background-color: #000000aa ;}
+		#list-asso2{background-color : #5a005a ;}
+		#list-asso2:hover{background-color : #5a005abb ;}
+		#list-asso4{background-color : #2cb7b9 ;}
+		#list-asso4:hover{background-color : #2cb7b9bb ;}
+		#list-asso5{background-color : #005221 ;}
+		#list-asso5:hover{background-color : #005221dd ;}
+		#list-asso6{background-color : #ffd700 ;}
+		#list-asso6:hover{background-color : #ffd70099 ;}
+		#list-asso7{background-color : #fc9303 ;}
+		#list-asso7:hover{background-color : #fc9303dd ;}
+		#list-asso8{background-color : #ce0018 ;}
+		#list-asso8:hover{background-color : #ce0018bb ;}
+		#list-asso9{background-color : #663300 ;}
+		#list-asso9:hover{background-color : #663300dd ;}
+		#list-asso10{background-color : #fff ; color: black ;}
+		#list-asso10:hover{background-color : #00000022 ;}
+
+		.iconeAssoTemp {
+			display: flex ;
+
+			margin: 0px ;
+			
+			height: 100px ;
+
+			font-weight : bold ;
+		}
+
+		#list-txtAsso1 {background-color : #000 ;}
+		#list-txtAsso2 {background-color : #5a005a ;}
+		#list-txtAsso3 {background-color : #1F3F7C ;}
+		#list-txtAsso4 {background-color : #2cb7b9 ;}
+		#list-txtAsso5 {background-color : #005221 ;}
+		#list-txtAsso6 {background-color : #ffd700 ;}
+		#list-txtAsso7 {background-color : #fc9303 ;}
+		#list-txtAsso8 {background-color : #ce0018 ;}
+		#list-txtAsso9 {background-color : #663300 ;}
+		#list-txtAsso10 {background-color : #fff ; color: black ;}
+
+		.txtAsso {
+			min-height: 450px ;
+
+			padding-left: 10px ;
+
+			color: white ;
+		}
+
+		.titleTxtAsso {
+			font-weight: bold ;
+		}
+
+/***Footer***/
+	footer {background-color : #2471A3 ; color : white ;}

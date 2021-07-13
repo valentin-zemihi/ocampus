@@ -1,0 +1,28 @@
+/*
+* Color
+* black & white
+*/
+
+/***Page d'Accueil***/
+
+	/*---Menu---*/
+		#headerMenu {background-color : #ffffffdd ;}
+	
+		.title {color : black ;}
+
+		#zoneIcone {color : black ;}
+		.zoneIcone:hover {background-color: grey ;}
+
+		#collapseMenu {background-color : #505050 ;}
+
+	/*---Page---*/
+		h1 {
+			font : bold 2em "Verdana";
+			color : #fff ;
+		
+			background-color : #000 ;
+			border : 5px solid #fff ;
+		}
+
+/***Footer***/
+	footer {background-color : #000000 ;color : white ;}

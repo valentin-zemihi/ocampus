@@ -1,0 +1,25 @@
+.container-fluid {
+	margin: 0px ;
+	padding: 0px ;
+}
+
+.row {
+	margin : 0px ;
+	padding : 0px ;
+}
+
+.row > * {
+	padding : 0px ;
+}
+
+.btn {
+	height: 100% ;
+}
+
+.list-group-item {
+	position : static ;
+}
+
+.list-group-item.active {
+    z-index: -1 ;
+}
