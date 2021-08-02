@@ -5,113 +5,141 @@
 */
 
 /***Special adapted Boootstrap***/
-	.btn-primary {
-		background-color : #4682b4 ;
-		border-color : #4682b4 ;
+	.btn-primary, .btn-primary:focus {
+		background-color : #f1c40f ;
+		border-color : #f1c40f ;
 	}
-	.btn-primary:hover {background-color: #308ecd ;}
+	.btn-primary:hover {background-color: #f5d34b ; border-color: black;}
+	.btn-primary:focus {box-shadow: 0 0 0 .25rem rgba(241,196,15,.5);}
 
-/***Home page***/
-
-	/*---Menu---*/
-		.title {color : white ;}
+/*---Menu---*/
+	.title {color : white ;}
 	
-		#headerMenu {background-color : #2471a3aa ;}
+	#headerMenu {background-color : #2471a3aa ;}
 	
-		#zoneIcone {color : white ;}
-		.zoneIcone:hover {background-color: #308ecd ;}
+	#zoneIcone {color : white ;}
+	.zoneIcone:hover {background-color: #f5d34b ;}
 
-		#collapseMenu {background-color : #308ecd ;}
+	#collapseMenu {background-color : #f5d34b ;}
 
-	/*---Présentation---*/
-		h1 {
-			font : bold 2em "Verdana";
-			color : white ;
-		
-			background-color : #2471A3 ;
-			border : 5px solid white ;
-		}
+	.menuLink {
+		color : white ;
+		font-weight : bold ;
+		font-size: 1.5rem ;
+	}
+	.menuLink:hover {color : #2471a3 ;}
 
-	/*---Présentation Assos---*/
-		#zoneAsso {margin-bottom: 10px ;}
+	.nav-item.active {background-color: #2471a3 ; pointer-events: none;}
 
-		#zoneListAsso {
-			max-height: 450px ;
-			overflow: auto ;
-		}
+	.dropdown-menu {
+		background-color: #f5d34b;
+		border-color : #f5d34b ;
+	}
 
-		.btnAsso {
-			max-height: 100px ;
-			margin-top : 5px ;
+	.dropdown-item {
+		color: white ;
+		font-weight: bold ;
+	}
+	.dropdown-item:hover {
+		color: white ;
+		font-weight: bold ;
+		background-color: #2471a3 ;
+	}
 
-			text-decoration: none ;
+	.dropdown-item.active {background-color: #2471a3 ; pointer-events: none;}
 
-			color: white ;}
-		.btnAsso:hover {
-			background-color : #00000022 ;
+/*---Présentation---*/
+	h1 {
+		font : bold 2em "Verdana";
+		color : white ;
+	
+		background-color : #2471A3 ;
+		border : 5px solid white ;
+	}
 
-			text-decoration : underline ;
-			color : white ;
-		}
-		.btnAsso.active{
-			background-color : #00000022 ;
-		}
+/***Présentation Assos***/
+	#zoneAsso {padding : 20px ;}
+	#zoneAssoTitle {
+		display: flex ;
+		text-align : center ;
+		font-weight: bold ;
+		font-size: 2.5rem ;
+		color : #f1c40f ;
+	}
 
-		.btnLogoAsso {
-			max-height: 100px ;
-		}
+	.btnAsso {
+		height : 180px ;
+		width : 180px ;
+		text-decoration: none ;
+		color: white ;
+		font-weight: bold ;
+	}
+	.btnAsso:hover {
+		background-color : #00000022 ;
+		text-decoration : underline ;
+		color : white ;
+		cursor : pointer ;
+	}
+	.btnAsso.active{background-color : #00000022 ;}
 
-		#list-asso1{background-color : #000 ;}
-		#list-asso1:hover{background-color: #000000aa ;}
-		#list-asso2{background-color : #5a005a ;}
-		#list-asso2:hover{background-color : #5a005abb ;}
-		#list-asso4{background-color : #2cb7b9 ;}
-		#list-asso4:hover{background-color : #2cb7b9bb ;}
-		#list-asso5{background-color : #005221 ;}
-		#list-asso5:hover{background-color : #005221dd ;}
-		#list-asso6{background-color : #ffd700 ;}
-		#list-asso6:hover{background-color : #ffd70099 ;}
-		#list-asso7{background-color : #fc9303 ;}
-		#list-asso7:hover{background-color : #fc9303dd ;}
-		#list-asso8{background-color : #ce0018 ;}
-		#list-asso8:hover{background-color : #ce0018bb ;}
-		#list-asso9{background-color : #663300 ;}
-		#list-asso9:hover{background-color : #663300dd ;}
-		#list-asso10{background-color : #fff ; color: black ;}
-		#list-asso10:hover{background-color : #00000022 ;}
+	.btnListe {
+		display : flex ;
+		width : 100% ;
+		justify-content : center ;
+		align-items : center ;
+	}
 
-		.iconeAssoTemp {
-			display: flex ;
+	.btnLogoAsso {max-height: 100px ;}
 
-			margin: 0px ;
-			
-			height: 100px ;
+	#zoneAssoLogo {
+		max-height: 650px ;
+		overflow: auto ;
+	}
 
-			font-weight : bold ;
-		}
+	.txtAsso {
+		padding : 5px ;
 
-		#list-txtAsso1 {background-color : #000 ;}
-		#list-txtAsso2 {background-color : #5a005a ;}
-		#list-txtAsso3 {background-color : #1F3F7C ;}
-		#list-txtAsso4 {background-color : #2cb7b9 ;}
-		#list-txtAsso5 {background-color : #005221 ;}
-		#list-txtAsso6 {background-color : #ffd700 ;}
-		#list-txtAsso7 {background-color : #fc9303 ;}
-		#list-txtAsso8 {background-color : #ce0018 ;}
-		#list-txtAsso9 {background-color : #663300 ;}
-		#list-txtAsso10 {background-color : #fff ; color: black ;}
+		color : white;
+	}
 
-		.txtAsso {
-			min-height: 450px ;
+	#logoAsso1, .Asso1Txt{background-color : #000 ;}
+	#logoAsso1:hover{background-color: #000000aa ;}
+	#logoAsso2, .Asso2Txt{background-color : #5a005a ;}
+	#logoAsso2:hover{background-color : #5a005abb ;}
+	.Asso3Txt{background-color : #1F3F7C ;}
+	#logoAsso4, .Asso4Txt{background-color : #2cb7b9 ;}
+	#logoAsso4:hover{background-color : #2cb7b9bb ;}
+	#logoAsso5, .Asso5Txt{background-color : #005221 ;}
+	#logoAsso5:hover{background-color : #005221dd ;}
+	#logoAsso6, .Asso6Txt{background-color : #ffd700 ;}
+	#logoAsso6:hover{background-color : #ffd70099 ;}
+	#logoAsso7, .Asso7Txt{background-color : #fc9303 ;}
+	#logoAsso7:hover{background-color : #fc9303dd ;}
+	#logoAsso8, .Asso8Txt{background-color : #ce0018 ;}
+	#logoAsso8:hover{background-color : #ce0018bb ;}
+	#logoAsso9, .Asso9Txt{background-color : #663300 ;}
+	#logoAsso9:hover{background-color : #663300dd ;}
+	#logoAsso10, .Asso10Txt{background-color : #fff ; color: black ;}
+	#logoAsso10:hover{background-color : #00000022 ;}
 
-			padding-left: 10px ;
+	#zoneAssoTxt {
+		position : relative ;
+	}
 
-			color: white ;
-		}
+	#zoneBtnClose {
+		display: flex ;
+		position : absolute ;
+		top : 20px ;
+		right : 20px ;
+		width : auto ;
+		height: auto ;
+		border-radius : 50%;
 
-		.titleTxtAsso {
-			font-weight: bold ;
-		}
+		background-color: white ;
+	}
+	#zoneBtnClose:hover {background-color : grey ;}
+
+/**Assomember**/
 
 /***Footer***/
 	footer {background-color : #2471A3 ; color : white ;}

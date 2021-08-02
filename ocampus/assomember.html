@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>La Fédération - ÔCampus</title>
+
+	<meta charset="utf-8">
+
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/adapted_bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style_oca.css">
+
+	<!--JavaScript-->
+	<script type="text/javascript" src="../js/popper.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
+	<script type="text/javascript" src="../js/assomember.js"></script>
+	<script type="text/javascript" src="../js/assomember/association.js"></script>
+
+</head>
+
+<body>
+
+<!--Zone Menu-->
+<div id="zoneMenu" class="container-fluid">
+	<div id="headerMenu" class="row">
+		<div id="zoneButtEtuOrl" class="col-1">
+			<a href="../index_etuorl.html"><button class="btn btn-primary btnHeaderMenu">Logo Etudiants d'Orléans</button></a>
+		</div>
+		
+		<div class="col-1"></div>
+		<div id="zoneMenuCollapse" class="col-1">
+			<button class="btn btn-primary btnHeaderMenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu" >Menu</button>
+		</div>
+		<div class="col-6 title allCenter">Logo ÔCampus (Jaune)</div>
+		<div id="zoneIcone" class="col-2 allCenter">
+			<div class="row">
+				<div id="zoneMarket" class="col-6 zoneIcone">Icone<br>Boutique</div>
+				<div id="zoneUser" class="col-6 zoneIcone">Icone<br>Compte</div>
+			</div>
+		</div>
+	</div>
+	<div id="collapseMenu" class="container collapse">
+		<div id="rowMenu" class="row allCenter">
+			<ul class="nav justify-content-center">
+				<li class="nav-item"><a class="nav-link menuLink" href="../index.html">Accueil</a></li>
+				<li class="nav-item dropdown">
+					<a class="nav-link menuLink dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ÔCampus</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="federation.html">La Fédération</a></li>
+						<li><a class="dropdown-item active" href="assomember.html">Associations membres</a></li>
+						<li><a class="dropdown-item" href="#">Représentation étudiante</a></li>
+						<li><a class="dropdown-item" href="#">Partenaire</a></li>
+						<li><a class="dropdown-item" href="#">Événement et projet</a></li>
+					</ul>
+				</li>
+				<li class="nav-item"><a class="nav-link menuLink" href="#">Actualités</a></li>
+				<li class="nav-item"><a class="nav-link menuLink" href="#">Asso de la fédé</a></li>
+				<li class="nav-item"><a class="nav-link menuLink" href="#">Campus et villes</a></li>
+				<li class="nav-item"><a class="nav-link menuLink" href="#">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!--Zone corps-->
+<div id="zoneAsso" class="container-fluid">
+	<div id="zoneAssoTitle" class="row">
+		<p>Associations membres de ÔCampus</p>
+	</div>
+
+	<div id="zoneAssoLogoTxt" class="allCenter"></div>
+
+	<!--<div id="accordionAsso" class="accordion allCenter">
+		<button id="logoAsso1" class="btn btnAsso" data-bs-toggle="collapse" data-bs-target="#textAsso1" aria-expanded="false" aria-controls="textAsso1">Asso 1</button>
+		<div id="textAsso1" class="collapse txtAsso" data-bs-parent="#accordionAsso">
+			<div>
+				<h2 class="titleTxtAsso">Asso 1</h2>
+				<p>Lorem ipsum asso 1</p>
+			</div>
+		</div>
+		<button id="logoAsso2" class="btn btnAsso" data-bs-toggle="collapse" data-bs-target="#textAsso2" aria-expanded="false" aria-controls="textAsso2">Asso 2</button>
+		<div id="textAsso2" class="collapse txtAsso" data-bs-parent="#accordionAsso">
+			<div>
+				<h2 class="titleTxtAsso">Asso 2</h2>
+				<p>Lorem ipsum asso 2</p>
+			</div>
+		</div>
+		<button id="logoAsso3" class="btn btnAsso" data-bs-toggle="collapse" data-bs-target="#textAsso3" aria-expanded="false" aria-controls="textAsso3"><img class="btnLogoAsso" src="../img/Logo_asso_map.svg"></button>
+		<button id="logoAsso4" class="btn btnAsso" data-bs-toggle="collapse" data-bs-target="#textAsso4" aria-expanded="false" aria-controls="textAsso4">Asso 4</button>
+		<button id="logoAsso5" class="btn btnAsso" data-bs-toggle="collapse" data-bs-target="#textAsso5" aria-expanded="false" aria-controls="textAsso5">Asso 5</button>
+		<button id="logoAsso6" class="btn btnAsso" data-bs-toggle="collapse" data-bs-target="#textAsso6" aria-expanded="false" aria-controls="textAsso6">Asso 6</button>
+		<button id="logoAsso7" class="btn btnAsso" data-bs-toggle="collapse" data-bs-target="#textAsso7" aria-expanded="false" aria-controls="textAsso7">Asso 7</button>
+		<button id="logoAsso8" class="btn btnAsso" data-bs-toggle="collapse" data-bs-target="#textAsso8" aria-expanded="false" aria-controls="textAsso8">Asso 8</button>
+		<button id="logoAsso9" class="btn btnAsso" data-bs-toggle="collapse" data-bs-target="#textAsso9" aria-expanded="false" aria-controls="textAsso9">Asso 9</button>
+		<button id="logoAsso10" class="btn btnAsso" data-bs-toggle="collapse" data-bs-target="#textAsso10" aria-expanded="false" aria-controls="textAsso10">Asso 10</button>
+	</div>-->
+</div>
+
+	<!--<div id="zonePresAsso" class="row">
+		<div id="zoneListAsso" class="col-2">
+			<div id="list-tab" class="list-group" role="tablist">
+				<a id="list-asso1" class="btnAsso active" data-bs-toggle="list" href="#list-txtAsso1" role="tab" aria-controls="asso1"><p class="iconeAssoTemp allCenterFlex">Logo Asso 1</p></a>
+				<a id="list-asso2" class="btnAsso" data-bs-toggle="list" href="#list-txtAsso2" role="tab" aria-controls="asso2"><p class="iconeAssoTemp allCenterFlex">Logo Asso 2</p></a>
+				<a id="list-asso3" class="btnAsso text-center" data-bs-toggle="list" href="#list-txtAsso3" role="tab" aria-controls="asso3"><img class="btnLogoAsso" src="../img/Logo_asso_map.svg"></a>
+				<a id="list-asso4" class="btnAsso" data-bs-toggle="list" href="#list-txtAsso4" role="tab" aria-controls="asso4"><p class="iconeAssoTemp allCenterFlex">Logo Asso 4</p></a>
+				<a id="list-asso5" class="btnAsso" data-bs-toggle="list" href="#list-txtAsso5" role="tab" aria-controls="asso5"><p class="iconeAssoTemp allCenterFlex">Logo Asso 5</p></a>
+				<a id="list-asso6" class="btnAsso" data-bs-toggle="list" href="#list-txtAsso6" role="tab" aria-controls="asso6"><p class="iconeAssoTemp allCenterFlex">Logo Asso 6</p></a>
+				<a id="list-asso7" class="btnAsso" data-bs-toggle="list" href="#list-txtAsso7" role="tab" aria-controls="asso7"><p class="iconeAssoTemp allCenterFlex">Logo Asso 7</p></a>
+				<a id="list-asso8" class="btnAsso" data-bs-toggle="list" href="#list-txtAsso8" role="tab" aria-controls="asso8"><p class="iconeAssoTemp allCenterFlex">Logo Asso 8</p></a>
+				<a id="list-asso9" class="btnAsso" data-bs-toggle="list" href="#list-txtAsso9" role="tab" aria-controls="asso9"><p class="iconeAssoTemp allCenterFlex">Logo Asso 9</p></a>
+				<a id="list-asso10" class="btnAsso" data-bs-toggle="list" href="#list-txtAsso10" role="tab" aria-controls="asso10"><p class="iconeAssoTemp allCenterFlex">Logo Asso 10</p></a>
+			</div>
+		</div>
+		<div id="zoneTextAsso" class="col-10">
+			<div id="tabTextAsso" class="tab-content">
+				<div id="list-txtAsso1" class="txtAsso tab-pane fade show active" role="tabpanel" aria-labelleddy="list-asso1">
+					<h2 class="titleTxtAsso">Asso 1</h2>
+					<p>Lorem ipsum asso 1</p>
+				</div>
+				<div id="list-txtAsso2" class="txtAsso tab-pane fade" role="tabpanel" aria-labelleddy="list-asso2">
+					<h2 class="titleTxtAsso">Asso 2</h2>
+					<p>Lorem ipsum asso 2</p>
+				</div>
+				<div id="list-txtAsso3" class="txtAsso tab-pane fade" role="tabpanel" aria-labelleddy="list-asso3">
+					<h2 class="titleTxtAsso">Association des Métiers de l'Accompagnement Politique - Asso MAP</h2>
+					<p>Présentation de l'Asso MAP</p>
+				</div>
+				<div id="list-txtAsso4" class="txtAsso tab-pane fade" role="tabpanel" aria-labelleddy="list-asso4">
+					<h2 class="titleTxtAsso">Asso 4</h2>
+					<p>Lorem ipsum asso 4</p>
+				</div>
+				<div id="list-txtAsso5" class="txtAsso tab-pane fade" role="tabpanel" aria-labelleddy="list-asso5">
+					<h2 class="titleTxtAsso">Asso 5</h2>
+					<p>Lorem ipsum asso 5</p>
+				</div>
+				<div id="list-txtAsso6" class="txtAsso tab-pane fade" role="tabpanel" aria-labelleddy="list-asso6">
+					<h2 class="titleTxtAsso">Asso 6</h2>
+					<p>Lorem ipsum asso 6</p>
+				</div>
+				<div id="list-txtAsso7" class="txtAsso tab-pane fade" role="tabpanel" aria-labelleddy="list-asso7">
+					<h2 class="titleTxtAsso">Asso 7</h2>
+					<p>Lorem ipsum asso 7</p>
+				</div>
+				<div id="list-txtAsso8" class="txtAsso tab-pane fade" role="tabpanel" aria-labelleddy="list-asso8">
+					<h2 class="titleTxtAsso">Asso 8</h2>
+					<p>Lorem ipsum asso 8</p>
+				</div>
+				<div id="list-txtAsso9" class="txtAsso tab-pane fade" role="tabpanel" aria-labelleddy="list-asso9">
+					<h2 class="titleTxtAsso">Asso 9</h2>
+					<p>Lorem ipsum asso 9</p>
+				</div>
+				<div id="list-txtAsso10" class="txtAsso tab-pane fade" role="tabpanel" aria-labelleddy="list-asso10">
+					<h2 class="titleTxtAsso">Asso 10</h2>
+					<p>Lorem ipsum asso 10</p>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	
+</div>
+
+<footer>
+	<div class="allCenter">
+		Plan du site | Contact <br>
+		©2021 ÔCampus Tous Droits réservés. <br>
+		Informations légales | Mentions légales | Cookies
+	</div>
+</footer>
+
+</body>
+
+</html>
