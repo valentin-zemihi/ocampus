@@ -3,7 +3,8 @@
 <html>
 
 <head>
-	<title>Accueil - ÔCampus</title>
+
+	<title>Ville - ÔCampus</title>
 
 	<meta charset="utf-8">
 
@@ -17,35 +18,17 @@
 	<script type="text/javascript" src="js/popper.min.js"></script>
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<!--Script principal-->
 	<script type="text/javascript" src="js/main.js"></script>
-		<!--Script assmomenber-->
-	<script type="text/javascript" src="js/assomember/assomember.js"></script>
-	<script type="text/javascript" src="js/assomember/association.js"></script>
-		<!--Script news-->
-	<script type="text/javascript" src="js/news/news.js"></script>
-	<script type="text/javascript" src="js/news/article.js"></script>
-		<!--Tools script-->
-	<script type="text/javascript" src="js/tools/tools.js"></script>
+
 </head>
 
 <body>
-
-<!--Zone wow-->
-<div id="zoneWow" class="collapse show">
-	<div id="zoneTxtWow" class="allCenterFlex">
-		ÔCampus<br>WOW Effect ! It's amazing !
-	</div>
-	<div id="zoneCloseButton">
-		<button id="closeButton" class="btn btn-primary" onclick="modifyTxtBtnWow()" type="button" data-bs-toggle="collapse" data-bs-target="#zoneWow" aria-expanded="true" aria-controls="zoneWow">Fermer Intro</button>
-	</div>
-</div>
 
 <!--Zone Menu-->
 <div id="zoneMenu" class="container-fluid">
 	<div id="headerMenu" class="row">
 		<div id="zoneButtEtuOrl" class="col-1">
-			<a href="index_etuorl.html"><button class="btn btn-primary btnHeaderMenu">Logo Etudiants d'Orléans</button></a>
+			<a href="index_etuorl.html"><button class="btn btn-primary btnHeaderMenu">Logo Étudiants d'Orléans</button></a>
 		</div>
 		
 		<div class="col-1"></div>
@@ -59,15 +42,11 @@
 				<div id="zoneUser" class="col-6 zoneIcone">Icone<br>Compte</div>
 			</div>
 		</div>
-
-		<div id="zoneButtCollapse" class="col-1">
-			<button id="btnWow" class="btn btn-primary btnHeaderMenu" onclick="modifyTxtBtnWow()" type="button" data-bs-toggle="collapse" data-bs-target="#zoneWow" aria-expanded="true" aria-controls="zoneWow">Fermer Intro</button>
-		</div>
 	</div>
 	<div id="collapseMenu" class="container collapse">
-		<div id="rowMenu" class="row">
+		<div id="rowMenu" class="row allCenter">
 			<ul class="nav justify-content-center">
-				<li class="nav-item active"><a class="nav-link menuLink active" href="index.html">Accueil</a></li>
+				<li class="nav-item"><a class="nav-link menuLink" href="index.html">Accueil</a></li>
 				<li class="nav-item dropdown">
 					<a class="nav-link menuLink dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ÔCampus</a>
 					<ul class="dropdown-menu">
@@ -81,8 +60,8 @@
 				<li class="nav-item dropdown">
 					<a class="nav-link menuLink dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" href="#">Actualités</a>
 					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="news/cover.html">Les actus de la fédé</a></li>
-						<li><a class="dropdown-item" href="news/newsletter.html">Newsletter</a></li>
+						<li><a class="dropdown-item" href="../news/cover.html">Les actus de la fédé</a></li>
+						<li><a class="dropdown-item" href="../news/newsletter.html">Newsletter</a></li>
 					</ul>
 				</li>
 				<li class="nav-item dropdown">
@@ -92,41 +71,20 @@
 						<li><a class="dropdown-item" href="campus-city/city.html">Ville</a></li>
 					</ul>
 				</li>
-				<li class="nav-item"><a class="nav-link menuLink" href="contact.html">Contact</a></li>
+				<li class="nav-item active"><a class="nav-link menuLink" href="contact.html">Contact</a></li>
 			</ul>
 		</div>
 	</div>
 </div>
 
-<!--Zone Welcome-->
-<div id="zoneWelcome" class="container">
-	<!--Intro au site-->
-	<div id="zoneIntro">
-		<img src="img/Bannière ÔCampus.png">
-		<p class="toChange">[Texte de bienvenu sur le site de ÔCampus]</p>
+<!--Zone corps-->
+<div id="zoneText" class="container">
+	<div id="zoneContactTitle" class="row">
+		<div id="contactTitle" class="divTitle">
+			Contact
+		</div>
 	</div>
-	<div id="zoneBigFiveNews">
-		<h1>Les cinq actus du moment</h1>
-		<div id="bigNews0"></div>
-		<div id="bigNews1"></div>
-		<div id="bigNews2"></div>
-		<div id="bigNews3"></div>
-		<div id="bigNews4"></div>
-		<div id="divLinkNewsletter"> <a id="linkNewsletter" href="news/newsletter.html">La newsletter du mois</a></div>
-	</div>
-	<div id="zoneOCampus">
-		<h1>ÔCampus</h1>
-		<h2>La fédération</h2>
-		<h2>La représentation étudiante</h2>
-		<h2>Les projets de la fédération</h2>
-		<h2>Campus et ville</h2>
-	</div>
-	<div id="zoneAsso">
-		<h1>Les associations membres de la fédération</h1>
-		<a href="ocampus/assomember.html">
-			<div id="zoneHomeAsso" class="allCenter"></div>
-		</a>
-	</div>
+	<p class="toChange">[élément de contact]</p>
 </div>
 
 <footer>

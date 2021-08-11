@@ -4,7 +4,7 @@
 
 <head>
 
-	<title>La Fédération - ÔCampus</title>
+	<title>Actualités - ÔCampus</title>
 
 	<meta charset="utf-8">
 
@@ -18,7 +18,12 @@
 	<script type="text/javascript" src="../js/popper.min.js"></script>
 	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="../js/main.js"></script>
+		<!--Script news-->
+	<script type="text/javascript" src="../js/news/mainNews.js"></script>
+	<script type="text/javascript" src="../js/news/news.js"></script>
+	<script type="text/javascript" src="../js/news/article.js"></script>
+		<!--Tools script-->
+	<script type="text/javascript" src="../js/tools/tools.js"></script>
 
 </head>
 
@@ -28,7 +33,7 @@
 <div id="zoneMenu" class="container-fluid">
 	<div id="headerMenu" class="row">
 		<div id="zoneButtEtuOrl" class="col-1">
-			<a href="../index_etuorl.html"><button class="btn btn-primary btnHeaderMenu">Logo Etudiants d'Orléans</button></a>
+			<a href="../index_etuorl.html"><button class="btn btn-primary btnHeaderMenu">Logo Étudiants d'Orléans</button></a>
 		</div>
 		
 		<div class="col-1"></div>
@@ -47,21 +52,21 @@
 		<div id="rowMenu" class="row allCenter">
 			<ul class="nav justify-content-center">
 				<li class="nav-item"><a class="nav-link menuLink" href="../index.html">Accueil</a></li>
-				<li class="nav-item fakeActive dropdown">
+				<li class="nav-item dropdown">
 					<a class="nav-link menuLink dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ÔCampus</a>
 					<ul class="dropdown-menu">
-						<li><a class="dropdown-item active" href="federation.html">La Fédération</a></li>
-						<li><a class="dropdown-item" href="assomember.html">Associations membres</a></li>
-						<li><a class="dropdown-item" href="representation.html">Représentation étudiante</a></li>
-						<li><a class="dropdown-item" href="partner.html">Partenaire</a></li>
-						<li><a class="dropdown-item" href="event-project.html">Événement et projet</a></li>
+						<li><a class="dropdown-item" href="../ocampus/federation.html">La Fédération</a></li>
+						<li><a class="dropdown-item" href="../ocampus/assomember.html">Associations membres</a></li>
+						<li><a class="dropdown-item" href="../ocampus/representation.html">Représentation étudiante</a></li>
+						<li><a class="dropdown-item" href="../ocampus/partner.html">Partenaire</a></li>
+						<li><a class="dropdown-item" href="../ocampus/event-project.html">Événement et projet</a></li>
 					</ul>
 				</li>
-				<li class="nav-item dropdown">
+				<li class="nav-item fakeActive dropdown">
 					<a class="nav-link menuLink dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" href="#">Actualités</a>
 					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="../news/cover.html">Les actus de la fédé</a></li>
-						<li><a class="dropdown-item" href="../news/newsletter.html">Newsletter</a></li>
+						<li><a class="dropdown-item active" href="cover.html">Les actus de la fédé</a></li>
+						<li><a class="dropdown-item" href="newsletter.html">Newsletter</a></li>
 					</ul>
 				</li>
 				<li class="nav-item dropdown">
@@ -79,24 +84,22 @@
 
 <!--Zone corps-->
 <div id="zoneText" class="container">
-	<div id="zoneFederation">
-		<h1>ÔCampus</h1>
-		<p class="toChange">[Présentation général de la fédération]</p>
+	<div id="zoneBigFiveNews">
+		<div id="bigFiveNewsTitle" class="divTitle">
+			Les cinqs actus du moment
+		</div>
+		<div id="bigNews0"></div>
+		<div id="bigNews1"></div>
+		<div id="bigNews2"></div>
+		<div id="bigNews3"></div>
+		<div id="bigNews4"></div>
 	</div>
-	<div id="zoneOrganizational">
-		<h1>Organigramme de la fédération</h1>
-		<p class="toChange">[Image Organigramme de la fédé]</p>
-	</div>
-	<div id="zonePole">
-		<h1>Les pôles de la fédération</h1>
-		<h2>Présidence</h2>
-		<h2>Trésorie</h2>
-		<h2>Secrétariat</h2>
-		<h2>...</h2>
-	</div>
-	<div id="zoneAction">
-		<h1>Les actions de la fédération</h1>
-		<p class="toChange">[Actions de références de l'asso</p>
+	<div class="separator"></div>
+	<div id="divLinkNewsletter"> <a id="linkNewsletter" href="newsletter.html">La newsletter du mois</a></div>
+	<div class="separator"></div>
+	<div id="zoneListNews">
+		<div id="listNewsTitle" class="divTitle">Actualités d'ÔCampus</div>
+		<p class="toChange">News 1</p>
 	</div>
 </div>
 

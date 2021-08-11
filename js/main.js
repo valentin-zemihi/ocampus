@@ -1,5 +1,13 @@
 var wowOpen = true ;
 
+window.onload = function() {
+	initializeBDDASSO() ;
+	initializeBDDNEWS() ;
+
+	intializeFiveBigNews() ;
+	initializeAssoHomePage() ;
+}
+
 function modifyTxtBtnWow() {
 	var tempTxt ;
 	if (wowOpen) {

@@ -3,6 +3,15 @@ body{
 	height: 100%;
 }
 
+.toChange {
+	background-color : #b2ef00 ;
+}
+
+.tCThumbnail {
+	height : 140px ;
+	background-color : #b2ef00 ;
+}
+
 /***Page d'Accueil***/
 
 		/*---Zone WOW---*/

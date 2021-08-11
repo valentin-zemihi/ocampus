@@ -12,7 +12,23 @@
 	.btn-primary:hover {background-color: #f5d34b ; border-color: black;}
 	.btn-primary:focus {box-shadow: 0 0 0 .25rem rgba(241,196,15,.5);}
 
-/*---Menu---*/
+/***Général***/
+	.divTitle {
+		text-align : center ;
+		font-weight: bold ;
+		font-size: 2.5rem ;
+		color : #f1c40f ;
+	}
+
+	.separator {
+		width : 100% ;
+		height : 5px ;
+		background-color : #2471a3 ;
+	}
+
+	img{max-width: 100%;}
+
+/***Menu***/
 	.title {color : white ;}
 	
 	#headerMenu {background-color : #2471a3aa ;}
@@ -30,6 +46,7 @@
 	.menuLink:hover {color : #2471a3 ;}
 
 	.nav-item.active {background-color: #2471a3 ; pointer-events: none;}
+	.nav-item.fakeActive {background-color : #2471a3 ;}
 
 	.dropdown-menu {
 		background-color: #f5d34b;
@@ -48,7 +65,7 @@
 
 	.dropdown-item.active {background-color: #2471a3 ; pointer-events: none;}
 
-/*---Présentation---*/
+/***Présentation***/
 	h1 {
 		font : bold 2em "Verdana";
 		color : white ;
@@ -59,7 +76,8 @@
 
 /***Présentation Assos***/
 	#zoneAsso {padding : 20px ;}
-	#zoneAssoTitle {
+	
+	.titleCenterOrange {
 		display: flex ;
 		text-align : center ;
 		font-weight: bold ;
@@ -139,7 +157,49 @@
 	}
 	#zoneBtnClose:hover {background-color : grey ;}
 
-/**Assomember**/
+/***News***/
+	.bigNews {
+		margin-top : 10px ;
+		border : solid;
+		border-color : white ;
+		border-radius: 0px 20px 20px 0px;
+	}
+	.bigNews:hover {
+		background-color: #2471a3aa ;
+		color : white ;
+	}
+
+	.bigNewsTxt {
+		padding-left : 10px ;
+	}
+
+	.bigNewsTitle {
+		font-weight : bold ;
+		font-size : 2rem ;
+	}
+
+	.newsAuthorDate {
+		font-style : italic;
+		color: black ;
+	}
+
+	.newsLeadPara {
+		font-weight: bold;
+	}
+
+	#divLinkNewsletter {
+		margin-bottom: 20px ;
+		text-align : center ;
+	}
+
+	#linkNewsletter {
+		font-weight : bold ;
+		font-size : 4rem ;
+		color : #f1c40f ;
+	}
+	#linkNewsletter:hover{
+		color : #2471a3 ;
+	}
 
 /***Footer***/
 	footer {background-color : #2471A3 ; color : white ;}
