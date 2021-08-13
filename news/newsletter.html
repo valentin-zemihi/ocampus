@@ -4,7 +4,7 @@
 
 <head>
 
-	<title>Actualités - ÔCampus</title>
+	<title>La Newsletter - ÔCampus</title>
 
 	<meta charset="utf-8">
 
@@ -19,6 +19,8 @@
 	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../js/main.js"></script>
+		<!--Tools script-->
+	<script type="text/javascript" src="../js/tools/tools.js"></script>
 
 </head>
 
@@ -26,21 +28,25 @@
 
 <!--Zone Menu-->
 <div id="zoneMenu" class="container-fluid">
-	<div id="headerMenu" class="row">
-		<div id="zoneButtEtuOrl" class="col-1">
-			<a href="../index_etuorl.html"><button class="btn btn-primary btnHeaderMenu">Logo Étudiants d'Orléans</button></a>
-		</div>
+	<div class="firstBackground">
+		<div id="headerMenu" class="row">
+		<!--<div id="zoneButtEtuOrl" class="col-1">
+			<a href="index_etuorl.html"><button class="btn btn-primary btnHeaderMenu">Logo Etudiants d'Orléans</button></a>
+		</div>-->
 		
 		<div class="col-1"></div>
-		<div id="zoneMenuCollapse" class="col-1">
+		<div id="zoneMenuCollapse" class="col-1 allCenter">
 			<button class="btn btn-primary btnHeaderMenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu" >Menu</button>
 		</div>
+		<div class="col-1"></div>
 		<div class="col-6 title allCenter">Logo ÔCampus (Jaune)</div>
-		<div id="zoneIcone" class="col-2 allCenter">
+		<!--<div id="zoneIcone" class="col-2 allCenter">
 			<div class="row">
 				<div id="zoneMarket" class="col-6 zoneIcone">Icone<br>Boutique</div>
 				<div id="zoneUser" class="col-6 zoneIcone">Icone<br>Compte</div>
 			</div>
+		</div>-->
+		<div class="col-3"></div>
 		</div>
 	</div>
 	<div id="collapseMenu" class="container collapse">
@@ -81,18 +87,144 @@
 <div id="zoneText" class="container">
 	<div id="zoneNewsletterTitle" class="row">
 		<div id="newsletterTitle" class="divTitle">
-			Newsletter
+			Newsletter du mois de Juin 2021
 		</div>
 	</div>
-	<p class="toChange">[Newsletter]</p>
+	<div id="zonePart1" class="row">
+		<div id="zonePart1Title" class="row titlePart">Points élus</div>
+		<div id="zonePart1SubPart1" class="row">
+			<div id="zonePart1SubPart1Title" class="row titleSubPart">Mercedi 2 juin</div>
+			<div id="zonePart1SubPart1Txt" class="row">
+				<p class="toChange">Lorem ipsum</p>
+			</div>
+			<div id="zonePart1SubPart2Title" class="row titleSubPart">Vendredi 18 juin</div>
+			<div id="zonePart1SubPart2Txt" class="row">
+				<p class="toChange">Lorem ipsum</p>
+			</div>
+		</div>
+	</div>
+	<div id="zonePart2" class="row">
+		<div id="zonePart2Title" class="row titlePart">Assemblée générale</div>
+		<div id="zonePart2SubPart1" class="row">
+			<div id="zonePart2SubPart1Title" class="row titleSubPart">Lundi 14 juin</div>
+			<div id="zonePart2SubPart1Txt" class="row">
+				<p class="toChange">Lorem ipsum</p>
+			</div>
+		</div>
+	</div>
+	<div id="zonePart3" class="row">
+		<div id="zonePart3Title" class="row titlePart">Le Guide de l'Etudiant</div>
+		<div id="zonePart3Txt" class="row">
+			<p class="toChange">Lorem ipsum</p>
+		</div>
+	</div>
+	<div id="zonePart4" class="row">
+		<div id="zonePart4Title" class="row titlePart">Elections régionales</div>
+		<div id="zonePart4SubPart1" class="row">
+			<div id="zonePart4SubPart1Title" class="row titleSubPart">Lundi 28 juin</div>
+			<div id="zonePart4SubPart1Txt" class="row">
+				<p class="toChange">Lorem ipsum</p>
+			</div>
+		</div>
+	</div>
+	<div id="zonePart5" class="row">
+		<div id="zonePart5Title" class="row titlePart">Réunions</div>
+		<div id="zonePart5SubPart1" class="row">
+			<div id="zonePart5SubPart1Title" class="row">
+				<div class="titleSubPart">Mercedi 2 juin</div>
+				<div class="subtitle">Avec la Gouvernance</div>
+			</div>
+			<div id="zonePart5SubPart1Txt" class="row">
+				<p class="toChange">Lorem ipsum</p>
+			</div>
+		</div>
+		<div id="zonePart5SubPart2" class="row">
+			<div id="zonePart5SubPart2Title" class="row">
+				<div class="titleSubPart">Mercedi 16 juin</div>
+				<div class="subtitle">Conseil métropolitain</div>
+			</div>
+			<div id="zonePart5SubPart2Txt" class="row">
+				<p class="toChange">Lorem ipsum</p>
+			</div>
+		</div>
+		<div id="zonePart5SubPart3" class="row">
+			<div id="zonePart5SubPart3Title" class="row">
+				<div class="titleSubPart">Jeudi 17 juin</div>
+				<div class="subtitle">Enquête CESER</div>
+			</div>
+			<div id="zonePart5SubPart3Txt" class="row">
+				<p class="toChange">Lorem ipsum</p>
+			</div>
+		</div>
+		<div id="zonePart5SubPart4" class="row">
+			<div id="zonePart5SubPart4Title" class="row">
+				<div class="titleSubPart">Jeudi 24 juin</div>
+				<div class="subtitle">Logement</div>
+			</div>
+			<div id="zonePart5SubPart4Txt" class="row">
+				<p class="toChange">Lorem ipsum</p>
+			</div>
+		</div>
+		<div id="zonePart5SubPart5" class="row">
+			<div id="zonePart5SubPart5Title" class="row">
+				<div class="titleSubPart">Jeudi 24 juin</div>
+				<div class="subtitle">Election Crous</div>
+			</div>
+			<div id="zonePart5SubPart5Txt" class="row">
+				<p class="toChange">Lorem ipsum</p>
+			</div>
+		</div>
+		<div id="zonePart5SubPart6" class="row">
+			<div id="zonePart5SubPart6Title" class="row">
+				<div class="titleSubPart">Mardi 29 juin</div>
+				<div class="subtitle">Plateforme Ôpe</div>
+			</div>
+			<div id="zonePart5SubPart6Txt" class="row">
+				<p class="toChange">Lorem ipsum</p>
+			</div>
+		</div>
+		<div id="zonePart5SubPart7" class="row">
+			<div id="zonePart5SubPart7Title" class="row">
+				<div class="titleSubPart">Mecredi 30 juin</div>
+				<div class="subtitle">Développement Durable</div>
+			</div>
+			<div id="zonePart5SubPart7Txt" class="row">
+				<p class="toChange">Lorem ipsum</p>
+			</div>
+		</div>
+		<div id="zonePart5SubPart8" class="row">
+			<div id="zonePart5SubPart8Title" class="row">
+				<div class="titleSubPart">Mercredi 30 juin</div>
+				<div class="subtitle">Logement</div>
+			</div>
+			<div id="zonePart5SubPart8Txt" class="row">
+				<p class="toChange">Lorem ipsum</p>
+			</div>
+		</div>
+	</div>
+	<div id="zonePart6" class="row">
+		<div id="zonePart6Title" class="row titlePart">Formations</div>
+		<div id="zonePart6SubPart1" class="row">
+			<div id="zonePart6SubPart1Title" class="row titleSubPart">Lundi 7 et mardi 8 juin</div>
+			<div id="zonePart6SubPart1Txt" class="row">
+				<p class="toChange">Lorem ipsum</p>
+			</div>
+		</div>
+		<div id="zonePart6SubPart2" class="row">
+			<div id="zonePart6SubPart2Title" class="row">
+				<div class="subtitle">Nouvelle stratégie concernant la formation</div>
+			</div>
+			<div id="zonePart6SubPart2Txt" class="row">
+				<p class="toChange">Lorem ipsum</p>
+			</div>
+		</div>
+	</div>
+	<div id="footerNewsletter" class="row">
+		On se retrouve prochainement pour la Newsletter du mois de juillet !
+	</div>
 </div>
 
-<footer>
-	<div class="allCenter">
-		Plan du site | Contact <br>
-		©2021 ÔCampus Tous Droits réservés. <br>
-		Informations légales | Mentions légales | Cookies
-	</div>
+<footer id="footerPage">
 </footer>
 
 </body>

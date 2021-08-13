@@ -58,7 +58,7 @@ function detailAsso(idLogoAsso) {
 		document.getElementById("zoneAssoTxt").className = BDDASSO[temp].name+"Txt txtAsso col-10" ;
 	}
 
-		creaddBasicElement("h2", "assoName", "assoTitle", BDDASSO[temp].name, null, "zoneAssoTxt");
+		creaddBasicElement("h2", "assoName", "assoName", BDDASSO[temp].name, null, "zoneAssoTxt");
 		creaddBasicElement("p", "assoPres", null, BDDASSO[temp].presentation, null, "zoneAssoTxt") ;
 
 	creaddBasicElement("div", "zoneBtnClose", "allCenterFlex", null, null, "zoneAssoTxt") ;

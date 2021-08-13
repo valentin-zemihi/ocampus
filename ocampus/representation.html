@@ -19,6 +19,8 @@
 	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../js/main.js"></script>
+		<!--Tools script-->
+	<script type="text/javascript" src="../js/tools/tools.js"></script>
 
 </head>
 
@@ -26,21 +28,25 @@
 
 <!--Zone Menu-->
 <div id="zoneMenu" class="container-fluid">
-	<div id="headerMenu" class="row">
-		<div id="zoneButtEtuOrl" class="col-1">
-			<a href="../index_etuorl.html"><button class="btn btn-primary btnHeaderMenu">Logo Etudiants d'Orléans</button></a>
-		</div>
+	<div class="firstBackground">
+		<div id="headerMenu" class="row">
+		<!--<div id="zoneButtEtuOrl" class="col-1">
+			<a href="index_etuorl.html"><button class="btn btn-primary btnHeaderMenu">Logo Etudiants d'Orléans</button></a>
+		</div>-->
 		
 		<div class="col-1"></div>
-		<div id="zoneMenuCollapse" class="col-1">
+		<div id="zoneMenuCollapse" class="col-1 allCenter">
 			<button class="btn btn-primary btnHeaderMenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu" >Menu</button>
 		</div>
+		<div class="col-1"></div>
 		<div class="col-6 title allCenter">Logo ÔCampus (Jaune)</div>
-		<div id="zoneIcone" class="col-2 allCenter">
+		<!--<div id="zoneIcone" class="col-2 allCenter">
 			<div class="row">
 				<div id="zoneMarket" class="col-6 zoneIcone">Icone<br>Boutique</div>
 				<div id="zoneUser" class="col-6 zoneIcone">Icone<br>Compte</div>
 			</div>
+		</div>-->
+		<div class="col-3"></div>
 		</div>
 	</div>
 	<div id="collapseMenu" class="container collapse">
@@ -90,12 +96,7 @@
 
 </div>
 
-<footer>
-	<div class="allCenter">
-		Plan du site | Contact <br>
-		©2021 ÔCampus Tous Droits réservés. <br>
-		Informations légales | Mentions légales | Cookies
-	</div>
+<footer id="footerPage">
 </footer>
 
 </body>

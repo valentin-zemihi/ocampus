@@ -73,6 +73,28 @@ function creaddBasicElement(type, id, cla, txt, img, idLocation) {
 	document.getElementById(idLocation).appendChild(element) ;
 }
 
+function creaddAElement (id, cla, link, txt, idLocation) {
+	var tempTxt ;
+
+	var element = document.createElement("a") ;
+	if(id != null) {element.id = id ;}
+	if(cla != null) {element.className = cla ;}
+	if(link != null) {element.href = link ;}
+	if(txt != null) {
+		tempTxt = document.createTextNode(txt) ;
+		element.appendChild(tempTxt) ;
+	}
+
+	document.getElementById(idLocation).appendChild(element) ;
+}
+
+function creaddTextNode(txt, idLocation) {
+	var tempTxt = document.createTextNode(txt) ;
+	console.log(idLocation) ;
+	document.getElementById(idLocation).appendChild(tempTxt) ;
+}
+
+/**Spéciale ÔCampus website**/
 function creaddButtonLogoAsso(id, cla, img, txt, idLocation) {
 	var tempTxt ;
 	var tempImg ;

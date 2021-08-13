@@ -12,6 +12,100 @@
 	.btn-primary:hover {background-color: #f5d34b ; border-color: black;}
 	.btn-primary:focus {box-shadow: 0 0 0 .25rem rgba(241,196,15,.5);}
 
+	.accordion-button, .accordion-collapse {border: 3px solid #2471a3;}
+	.accordion-collapse {
+		margin-right: 10px;
+		margin-left: 10px;
+		border: 2px solid #2471a3aa;
+		border-bottom-width: 0px;
+		border-top-width: 0px;	
+	}
+	.accordion-item:last-of-type .accordion-collapse{border-bottom-width: 2px;}
+	.accordion-item:last-of-type .accordion-button.collapsed {border-bottom-width: 3px;}
+	
+	.accordion-button {
+		position: static ;
+		font-weight: bold;
+		color : black;
+	}
+	.accordion-button:not(.collapsed) {
+		color: black;
+		background-color: #f1c40f55;
+	}
+	.accordion-button:hover{
+		background-color: #f1c40f55;
+	}
+	.accordion-button:focus {
+		border-color: #2471a3;
+		box-shadow: 0 0 0 .10rem rgba(13,110,253,.25);
+	}
+
+
+/***Balise HTML***/
+	h1 {
+		font : bold 2em "Verdana";
+		color : white ;
+	
+		background-color : #2471A3 ;
+		border : 5px solid white ;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: #f1c40f;
+	}
+	h2 a {
+		color: #f1c40f;
+		text-decoration: none;
+	}
+	h2 a:hover {
+		color: #f1c40faa;
+	}
+
+	h3 {
+		margin-left: 50px;
+
+		font-size: 1.2rem;
+		font-weight: bold;
+		color: black;
+	}
+	h3 a{
+		color: black;
+		text-decoration: none;
+	}
+	h3 a:hover {
+		color: #000000aa;
+	}
+
+	img {max-width: 100%;}
+
+	a.external{
+		background-image: url(../img/icon/external_link.png); /*Image de lien externe*/
+		background-position: center right;
+		background-repeat: no-repeat;
+		padding-right: 15px;
+	}
+	a.internal {
+		background-image: url(../img/icon/internal_link.png); /*Image de lien interne*/
+		background-position: center right;
+		background-repeat: no-repeat;
+		padding-right: 15px;
+	}
+	a.internal.blackIcon {
+		background-image: url(../img/icon/internal_link_black.png); /*Image de lien interne*/
+	}
+	a.internal.whiteIcone {
+		background-image: url(../img/icon/internal_link_white.png);
+	}
+
+	p {
+		text-indent: 50px;
+		text-align: justify;
+	}
+
+	footer {background-color : #2471A3 ; color : white ;}
+
 /***Général***/
 	.divTitle {
 		text-align : center ;
@@ -26,11 +120,10 @@
 		background-color : #2471a3 ;
 	}
 
-	img{max-width: 100%;}
-
 /***Menu***/
 	.title {color : white ;}
 	
+	.firstBackground {background-color: #ffffff;}
 	#headerMenu {background-color : #2471a3aa ;}
 	
 	#zoneIcone {color : white ;}
@@ -64,15 +157,6 @@
 	}
 
 	.dropdown-item.active {background-color: #2471a3 ; pointer-events: none;}
-
-/***Présentation***/
-	h1 {
-		font : bold 2em "Verdana";
-		color : white ;
-	
-		background-color : #2471A3 ;
-		border : 5px solid white ;
-	}
 
 /***Présentation Assos***/
 	#zoneAsso {padding : 20px ;}
@@ -120,6 +204,10 @@
 		color : white;
 	}
 
+	.assoName {
+		color: white;
+	}
+
 	#logoAsso1, .Asso1Txt{background-color : #000 ;}
 	#logoAsso1:hover{background-color: #000000aa ;}
 	#logoAsso2, .Asso2Txt{background-color : #5a005a ;}
@@ -137,7 +225,7 @@
 	#logoAsso8:hover{background-color : #ce0018bb ;}
 	#logoAsso9, .Asso9Txt{background-color : #663300 ;}
 	#logoAsso9:hover{background-color : #663300dd ;}
-	#logoAsso10, .Asso10Txt{background-color : #fff ; color: black ;}
+	#logoAsso10, .Asso10Txt{background-color : #fff ; color: black;}
 	#logoAsso10:hover{background-color : #00000022 ;}
 
 	#zoneAssoTxt {
@@ -158,24 +246,29 @@
 	#zoneBtnClose:hover {background-color : grey ;}
 
 /***News***/
-	.bigNews {
+	.divNews {
 		margin-top : 10px ;
 		border : solid;
 		border-color : white ;
 		border-radius: 0px 20px 20px 0px;
 	}
-	.bigNews:hover {
+	.divNews:hover {
 		background-color: #2471a3aa ;
 		color : white ;
 	}
 
-	.bigNewsTxt {
+	.divNewsTxt {
 		padding-left : 10px ;
 	}
 
 	.bigNewsTitle {
 		font-weight : bold ;
 		font-size : 2rem ;
+	}
+
+	.newsTitle {
+		font-weight: bold;
+		font-size: 1.5rem;
 	}
 
 	.newsAuthorDate {
@@ -201,5 +294,48 @@
 		color : #2471a3 ;
 	}
 
+/***Newsletter***/
+	.titlePart {
+		font-weight: bold ;
+		font-size: 2rem ;
+		color : #2471a3 ;
+	}
+	
+	.titleSubPart {
+		font-weight: bold;
+		font-size: 1.5rem;
+		color : black;
+	}
+
+	.subtitle {
+		font-weight: bold;
+		font-size: 1rem;
+		color : #f1c40f;
+	}
+
+/***Project***/
+	#accordionProject {
+		margin-right: 50px;
+		margin-left: 50px;
+	}
+
 /***Footer***/
-	footer {background-color : #2471A3 ; color : white ;}
+	.footerLink{
+		width: unset;
+
+		color: white;
+
+		text-decoration: none;
+	}
+	.footerLink:hover {
+		color : #f1c40f ;
+	}
+
+	.vertTextSeparator {
+	    display: flex;
+	    height: 1rem;
+	    width: 0.15rem;
+	    background-color: white;
+	    margin-left: 1rem;
+	    margin-right: 1rem;
+	}
