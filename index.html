@@ -22,45 +22,12 @@
 		<!--Script assmomenber-->
 	<script type="text/javascript" src="js/assomember/assomember.js"></script>
 	<script type="text/javascript" src="js/assomember/association.js"></script>
-		<!--Script news-->
-	<script type="text/javascript" src="js/news/news.js"></script>
-	<script type="text/javascript" src="js/news/article.js"></script>
 		<!--Tools script-->
 	<script type="text/javascript" src="js/tools/tools.js"></script>
 
 </head>
 
 <body>
-
-<!--Zone wow-->
-<div id="zoneWow" class="collapse show">
-	<div id="zoneTxtWow">
-		<div id="zoneCarouselWow" class="row">
-			<div id="carouselWowPhoto" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="5000">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<div class="divPhotoCarou"><img class="photoCarousel" src="img/photo/all_team_orlinz_cup.jpg"></div>
-					</div>
-					<div class="carousel-item">
-						<div class="divPhotoCarou"><img class="photoCarousel" src="img/photo/forma_moment.jpg"></div>
-					</div>
-					<div class="carousel-item">
-						<div class="divPhotoCarou"><img class="photoCarousel" src="img/photo/party_time.jpg"></div>
-					</div>
-					<div class="carousel-item">
-						<div class="divPhotoCarou"><img class="photoCarousel" src="img/photo/vote_time.jpg"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="zoneWowTitle">
-			Bienvenue sur le site ÔCampus
-		</div>
-	</div>
-	<div id="zoneCloseButton">
-		<button id="closeButton" class="btn btn-primary" onclick="modifyTxtBtnWow()" type="button" data-bs-toggle="collapse" data-bs-target="#zoneWow" aria-expanded="true" aria-controls="zoneWow">Fermer Intro</button>
-	</div>
-</div>
 
 <!--Zone Menu-->
 <div id="zoneMenu" class="container-fluid">
@@ -82,11 +49,7 @@
 				<div id="zoneUser" class="col-6 zoneIcone">Icone<br>Compte</div>
 			</div>
 		</div>-->
-		<div class="col-1"></div>
-		<div id="zoneButtCollapse" class="col-1">
-			<button id="btnWow" class="btn btn-primary btnHeaderMenu" onclick="modifyTxtBtnWow()" type="button" data-bs-toggle="collapse" data-bs-target="#zoneWow" aria-expanded="true" aria-controls="zoneWow">Fermer Intro</button>
-		</div>
-		<div class="col-1"></div>
+		<div class="col-3"></div>
 		</div>
 	</div>
 	<div id="collapseMenu" class="container collapse">
@@ -106,7 +69,7 @@
 				<li class="nav-item dropdown">
 					<a class="nav-link menuLink dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" href="#">Actualités</a>
 					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="news/cover.html">Les actus de la fédé</a></li>
+						<li><a class="dropdown-item" href="news/pressrelease.html">Communiqué de presse</a></li>
 						<li><a class="dropdown-item" href="news/newsletter.html">Newsletter</a></li>
 					</ul>
 				</li>
@@ -128,25 +91,17 @@
 	<!--Intro au site-->
 	<div id="zoneIntro">
 		<img src="img/Bannière ÔCampus.png">
-		<p class="toChange">[Texte de bienvenu sur le site de ÔCampus]</p>
-	</div>
-	<div id="zoneBigFiveNews">
-		<h1>Les cinq actus du moment</h1>
-		<div id="bigNews0"></div>
-		<div id="bigNews1"></div>
-		<div id="bigNews2"></div>
-		<div id="bigNews3"></div>
-		<div id="bigNews4"></div>
-		<div id="divLinkNewsletter"> <a id="linkNewsletter" href="news/newsletter.html">La newsletter du mois</a></div>
+		<p class="toChange">[#A1 Texte de bienvenu sur le site de ÔCampus]</p>
 	</div>
 	<div id="zoneOCampus">
 		<h1>ÔCampus</h1>
 		<h2><a class="internal" href="ocampus/federation.html">La fédération</a></h2>
+		<p class="toChange">[#A2 Texte de présentation de la fédération]</p>
 		<p><b>ÔCampus</b> est la <b>fédération des associations étudiantes de la ville d'Orléans</b>. Créée en <b>2017</b>, elle a pour objectif de <b>faciliter la communication</b> et le <b>partage</b> entre les associations étudiantes d'Orléans. Elle a également pour but d'organiser des <b>événements</b> et de contribuer au <b>dynamisme</b> de la vie étudiante orléanaise. ÔCampus regroupe aujourd'hui <b>34 associations</b> de la ville d'Orléans réparties sur les différents sites de l'enseignement supérieur de la ville (campus, centre vile..) qui oeuvrent pour les étudiants orléanais.</p>
 		<h2><a class="internal" href="ocampus/representation.html">La représentation étudiante</a></h2>
-		<p class="toChange">[Paragraphe sur la représentation étudiante]</p>
+		<p class="toChange">[#A3 Paragraphe sur la représentation étudiante]</p>
 		<h2><a class="internal" href="ocampus/event-project.html">Les projets de la fédération</a></h2>
-		<p class="toChange">[Paragraphe d'introduction au projet de la fédération]</p>
+		<p class="toChange">[#A4 Paragraphe d'introduction au projet de la fédération]</p>
 		<div class="accordion" id="accordionProject">
 			<div class="accordion-item">
 				<h2 class="accordion-header" id="headProject1">
@@ -156,7 +111,7 @@
 				</h2>
 				<div id="collapseProject1" class="accordion-collapse collapse" aria-labelleby="headProject1" data-bs-parent="#accordionProject">
 					<div class="accordion-body">
-						<p class="toChange">[Présentation de la Orlinz Cup]</p>
+						<p class="toChange">[#AP11 Présentation de la Orlinz Cup]</p>
 					</div>
 				</div>
 			</div>
@@ -168,7 +123,7 @@
 				</h2>
 				<div id="collapseProject2" class="accordion-collapse collapse" aria-labelleby="headProject1" data-bs-parent="#accordionProject">
 					<div class="accordion-body">
-						<p class="toChange">[Présentation du projet 2]</p>
+						<p class="toChange">[#AP12 Présentation du projet 2]</p>
 					</div>
 				</div>
 			</div>
@@ -180,16 +135,16 @@
 				</h2>
 				<div id="collapseProject3" class="accordion-collapse collapse" aria-labelleby="headProject1" data-bs-parent="#accordionProject">
 					<div class="accordion-body">
-						<p class="toChange">[Présentation du projet 3]</p>
+						<p class="toChange">[#AP13 Présentation du projet 3]</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<h2 class="h2Menu">Campus et ville</h2>
 			<h3><a class="internal blackIcon" href="campus-city/campus.html">Campus</a></h3>
-		<p class="toChange">[Paragraphe sur les Campus de l'Université d'Orléans]</p>
+		<p class="toChange">[#A5 Paragraphe sur les Campus de l'Université d'Orléans]</p>
 			<h3><a class="internal blackIcon" href="campus-city/city.html">Villes</a></h3>
-		<p class="toChange">[Paragraphe sur les villes d'Orléans]</p>
+		<p class="toChange">[#A6 Paragraphe sur les villes d'Orléans]</p>
 	</div>
 	<div id="zoneAsso">
 		<h1>Les associations membres de la fédération</h1>
